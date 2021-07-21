@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8CDCDCD"
+    tools:context=".Terminos">
+
+    <TextView
+        android:id="@+id/txtCondiciones"
+        android:layout_width="402dp"
+        android:layout_height="476dp"
+        android:text=" Al instalar, acceder a, o utilizar alguno de nuestros sitios web, aplicaciones móviles, boletines y subscripciones por internet, al igual que otras propiedades digitales en las cuales se hayan anunciado estos términos o se haya hecho referencia a ellos,
+        (denominados colectivamente “servicios en línea”), usted está entrando a un acuerdo vinculante con McDonald’s USA, LLC (“McDonald’s”, “Nosotros”, o “nos”) que controla y opera los servicios en línea desde su casa matriz en 110 North Carpenter Street, Chicago, Illinois 60607.
+        \n\n Al aceptar estos términos, usted también comprende y está de acuerdo con la Declaración de Privacidad de McDonald’s, la cual está incorporada a este acuerdo y forma parte de él.
+        \n \n Nuestra Declaración de Privacidad describe la forma en que recolectamos, usamos y compartimos información.
+        \n Al aceptar estos términos, usted comprende y está de acuerdo en que, tal y como se estipula en la Sección 9, usted está renunciando a su derecho a resolver cualquier disputa mediante otros procesos que podrían estar disponibles para usted, como por ejemplo acciones de la corte o procedimientos administrativos.
+         \n\n Esto también significa que usted está renunciando a sus derechos a tener un juicio con jurado, y a combinar su disputa con otras en una demanda colectiva.
+          \n\n Los servicios en línea no han sido previstos para ser usados por, ni dirigidos a, ninguna persona de menos de 13 años de edad. Usted debe por lo menos tener 13 años de edad para usar los servicios en línea. \n Si usted tiene al menos 13 años de edad pero no 18 años todavía (o la mayoría de edad legal es diferente en su jurisdicción), entonces debe revisar estos términos con su padre o guardián legal, y él debe entender y estar de acuerdo con estos términos para que usted pueda utilizar los servicios en línea.
+          \n Si usted o su padre o guardián legal no están de acuerdo con estos términos, entonces debe dejar inmediatamente de usar los servicios en línea y solicitar que McDonald’s cierre cualquier cuenta con servicios en línea que usted haya creado. Usted puede solicitar que se borre su cuenta enviándole un correo electrónico a la dirección contact.privacy@us.mcd.com.
+          \n Por favor, incluya la dirección de correo electrónico o la cuenta que desea que borremos."
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminos y condiciones"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ImageButton
+        android:id="@+id/bExit"
+        android:layout_width="77dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        android:src="@drawable/exit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

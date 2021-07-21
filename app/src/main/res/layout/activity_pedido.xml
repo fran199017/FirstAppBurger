@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".Pedido">
+
+    <TextView
+        android:id="@+id/cont5"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <TextView
+        android:id="@+id/labelBienvenido"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:hint="Bienvenid@"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="292dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="5dp"
+        android:hint="Bienvenido"
+        android:text="Pulse la hamburguesa para ver info nutricional"
+        android:textAlignment="textEnd"
+        android:textColor="#3B3C3C"
+        android:textSize="13sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/labelCesta"
+        android:layout_width="52dp"
+        android:layout_height="36dp"
+        android:inputType="number"
+        android:text="Cesta"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageButton
+        android:id="@+id/bCesta"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:scaleX="0.50"
+        android:scaleY="0.50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        android:src="@drawable/cesta" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="31dp"
+        android:layout_height="18dp"
+        android:text="Ver"
+        android:textAlignment="textEnd"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TableLayout
+        android:id="@+id/tablaHamburguesas"
+        android:layout_width="375dp"
+        android:layout_height="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bHamburguesa1"
+                android:layout_width="10dp"
+                android:layout_height="58dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/hamburguesa1" />
+
+            <TextView
+                android:id="@+id/txtdescripcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Bienvenido"
+                android:text="\nHamburguesa con queso"
+                android:textColor="#090808"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio1"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:hint="Bienvenido"
+                android:text="\n7€"
+                android:textAlignment="center"
+                android:textColor="#020307"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mas1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#026C63"
+                android:text="+"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menos1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#026C63"
+                android:text="-"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bHamburguesa2"
+                android:layout_width="0dp"
+                android:layout_height="63dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/hamburguesa2" />
+
+            <TextView
+                android:id="@+id/txtdescripcion2"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:hint="Bienvenido"
+                android:text="\nHamburguesa doble"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio2"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:hint="Bienvenido"
+                android:text="\n9€"
+                android:textAlignment="center"
+                android:textColor="#020307"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mas2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#026C63"
+                android:text="+"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menos2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#026C63"
+                android:text="-"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bHamburguesa3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/hamburguesa3" />
+
+            <TextView
+                android:id="@+id/txtdescripcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Bienvenido"
+                android:text="\nHamburguesa Angus"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio3"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:hint="Bienvenido"
+                android:text="\n11€"
+                android:textAlignment="center"
+                android:textColor="#020307"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mas3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#026C63"
+                android:text="+"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menos3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#026C63"
+                android:text="-"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bHamburguesa4"
+                android:layout_width="46dp"
+                android:layout_height="67dp"
+                android:src="@drawable/hamburguesa4"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtdescripcion5"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:hint="Bienvenido"
+                android:text="\nHamburguesa con queso inyectado"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio4"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:hint="Bienvenido"
+                android:text="\n12€"
+                android:textAlignment="center"
+                android:textColor="#020307"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mas4"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#026C63"
+                android:text="+"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menos4"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#026C63"
+                android:text="-"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bHamburguesa5"
+                android:layout_width="57dp"
+                android:layout_height="59dp"
+                android:src="@drawable/hamburguesa6" />
+
+            <TextView
+                android:id="@+id/txtdescripcion6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="Bienvenido"
+                android:text="\nHamburguesa a la parrilla"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtprecio5"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:hint="Bienvenido"
+                android:text="\n10€"
+                android:textAlignment="center"
+                android:textColor="#020307"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mas5"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#026C63"
+                android:text="+"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/menos5"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#026C63"
+                android:text="-"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/cont1"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <TextView
+        android:id="@+id/cont2"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <TextView
+        android:id="@+id/cont3"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/cont4"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="133dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoinferior" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
